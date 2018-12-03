@@ -1,6 +1,12 @@
 from random import shuffle
+# from typing import List
 
+
+# lets try to do one pass first
 def main():
+	# a = ['a','b','c','d','e','f','g','h']
+	# shuffle(a)
+	# unsorted_list = ['c', 'b', 'd', 'e', 'g', 'h', 'a', 'f']
 	numofelements = input("enter how many numbers you want your unsorted list to be: ")
 	
 	try:
@@ -50,7 +56,10 @@ def selection_sort(u_list):
 				s_loc = current
 				print("\t\ts_loc = {}".format(s_loc))
 			current += 1
-			print("\tnext element will be at location {}.".format(current))
+			if (current+1 < u_list_len):
+				print("\t******next element will be at location {}, with value of {}.".format(current, u_list[current]))
+			else:
+				pass
 		# once we've reached the end of the list, we start swapping
 		# the location which we found the smallest element will be overwritten by the first element.
 		u_list[s_loc] = u_list[start]
@@ -65,4 +74,5 @@ def selection_sort(u_list):
 
 	return u_list
 
-main()
+if __name__ == '__main__':
+	main()
