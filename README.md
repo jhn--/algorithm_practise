@@ -1,2 +1,2 @@
 # algorithm_practise
-Trying to write different kinds of sorting, searching and other DSAs.
+Practise different kinds of sorting, searching and other DSAs.
