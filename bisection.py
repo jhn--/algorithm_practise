@@ -19,7 +19,7 @@ def bisection(guess):
                 print("guess too low")
                 hih = mid
                 print(f'hih: {hih}')
-            mid = low+((hih - low)//2) #key
+            mid = (hih + low)//2 #key
             print(f'mid: {mid}')
         print(f"got it in {tries} tries.\n")
     else:
